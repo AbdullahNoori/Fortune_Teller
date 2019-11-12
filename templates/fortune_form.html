@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+   <form action="/fortune_results" method="GET">
+      Welcome to Fortune Form!
+      <br>
+         Select your gender:<br>
+      <input type="radio" name="gender" value="male" checked> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="none"> N/A<br>
+      <input type="radio" name="gender" value="other"> Other<br>
+      
+      Which color would you prefer most?
+      <input list="color_list" name="color">
+      <datalist id="colorlist">
+         <option name="color" value="white"></option>
+         <option name="color" value="orange"></option>
+         <option name="color" value="blue"></option>
+         <option name="color" value="red"></option>
+      </datalist><br>
+      Type of chocolate you are most likely to eat.
+      <select name="choco" form="choco">
+         <option value="dark chocolate?">Dark Chocolate</option>
+         <option value="milk chocolate?">Milk Chocolate</option>
+      </select>
+      <br>
+      First name:<br>
+      <input type="text" name="firstname" value="John">
+      <br>
+      Last name:<br>
+      <input type="text" name="lastname" value="Doe">
+      <br><br>
+      <input type="submit" value="Submit">
+   </form> 
+</body>
+</html>
